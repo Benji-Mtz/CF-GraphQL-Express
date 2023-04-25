@@ -3,7 +3,8 @@ const { GraphQLSchema, GraphQLObjectType, GraphQLString, graphql, GraphQLInt } =
 
 const app = express();
 const port = process.env.PORT || 8080;
-// Data
+
+// Nuevos tipos con subpropiedades => GraphQLObjectType 
 const courseType = new GraphQLObjectType({
     name: 'Course',
     fields: {
